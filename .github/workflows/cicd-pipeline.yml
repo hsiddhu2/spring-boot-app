@@ -60,5 +60,5 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no -i $HOME/key.pem ec2-user@${{ secrets.DEPLOY_HOST }} '
             sudo systemctl daemon-reload
-            sudo systemctl restart spring-boot-app
+            sudo systemctl restart springboot
           '
